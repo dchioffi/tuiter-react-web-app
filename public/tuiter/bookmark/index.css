@@ -1,0 +1,143 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    padding: 12px;
+}
+
+.wd-header {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.wd-header h1 {
+    margin-left: 20px;
+}
+
+.wd-header .fa-ellipsis-h {
+    margin-left: auto;
+}
+
+.wd-tuit {
+    position: relative;
+    padding: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-handle,
+.wd-date {
+    color: #6F6F6F;
+}
+
+.wd-icon {
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.wd-profile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.wd-name {
+    font-weight: bold;
+}
+
+.wd-content {
+    border: 1px solid #e1e8ed;
+    padding: 0;
+    margin-top: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wd-content .video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.wd-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wd-media-footer {
+    border-top: 1px solid lightgray;
+    padding-top: 1px;
+    margin-top: 0px; /* Add some margin-top for spacing */
+    margin-bottom: 8px; /* Add some margin-bottom for spacing */
+}
+
+.wd-website {
+    width: 100%;
+    margin-bottom: 5px; /* Reduce margin-bottom to create smaller spacing */
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #6F6F6F;
+}
+
+.wd-website a {
+    color: #6F6F6F;
+    text-decoration: none;
+}
+
+.wd-description {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #6F6F6F;
+}
+
+
+.wd-content-title {
+    margin-top: 4px; /* Add some margin-top for spacing */
+    margin-bottom: 4px; /* Add some margin-bottom for spacing */
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #000000; /* Set the font color to black */
+}
+
+.wd-actions {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    color: #6F6F6F;
+    font-size: 0.8em;
+    margin: 12px 0; /* Add top and bottom margin of 12 pixels */
+}
+
+.wd-action {
+    margin-right: 50px;
+    color: #657786;
+}
+
+.fa-ellipsis-h {
+    color: #6F6F6F;
+}
+
+.wd-tuit::before {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0; /* Updated to span the entire width of the screen */
+            height: 1px;
+            background-color: lightgray;
+        }
+.wd-arrow-icon {
+  color: black;
+}

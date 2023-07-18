@@ -1,0 +1,356 @@
+body {
+    background-color: #f5f8fa;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 20px;
+}
+
+.wd-search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.wd-search {
+    flex-grow: 1;
+    padding: 10px;
+    padding-left: 50px; /* adjusted to accommodate the magnifying glass icon */
+    border-radius: 20px;
+    border: none;
+    background-color: #e0e0e0; /* light gray */
+    color: #333; /* dark gray */
+    font-size: 12px;
+    margin-right: 50px; /* added to provide space for the gear icon */
+}
+
+.wd-search-icon, .wd-gear-icon {
+    font-size: 15px;
+    color: #888; /* dark gray */
+    position: absolute;
+}
+
+.wd-search-icon {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wd-gear-icon {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wd-tabs ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.wd-tab {
+    color: #657786;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.wd-tab a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px;
+    position: center; /* added to position the underline */
+}
+
+.wd-tab-active a {
+    color: #000; /* black */
+}
+
+.wd-tab-active a::after {
+    content: "";
+    display: inline-block;
+    height: 3px;
+    background: #1da1f2;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+ul.list-group li.list-group-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+ul.list-group li.list-group-item.active a {
+    color: white;
+}
+
+
+
+
+.wd-tuits ul {
+    list-style: none; /* This removes the bullet points */
+    padding: 0;
+}
+
+.wd-tuit {
+    padding: 10px;
+    border-bottom: 1px solid #e1e8ed;
+    position: relative;
+}
+
+.wd-tuit-tag {
+    color: #657786; /* gray */
+    font-size: 12px;
+}
+
+.wd-tuit-title {
+    color: #000; /* black */
+    font-size: 15px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.wd-tuit-tweets {
+    color: #657786; /* gray */
+    font-size: 12px;
+}
+
+.wd-tuit-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #657786; /* gray */
+    font-size: 10px;
+}
+
+.wd-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url('../../images/rabbids.jpeg'); 
+    background-size: cover;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    border-bottom: 1px solid #e1e8ed;
+    border-top: 1px solid #e1e8ed;
+}
+
+.wd-image h1 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    bottom: -20px;
+    left: 0px;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* Styling for the body element */
+body {
+    background-color: #f5f8fa; /* Sets the background color */
+    padding: 12px; /* Adds padding around the body */
+  
+  }
+  
+  /* Styling for the navbar class */
+  .navbar {
+    background-color: #fff; /* Sets the background color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  }
+  /* Styling for the gear icon within the input-group-append class */
+.input-group-append .fa-cog {
+    margin-left: 30px; /* Adds margin to the left */
+  }
+  
+  /* Styling for the navbar-brand class within the navbar class */
+  .navbar .navbar-brand {
+    color: #1da1f2; /* Sets the text color */
+  }
+  
+  /* Styling for the navbar-brand class within the navbar class on hover and focus */
+  .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+    color: #1a91da; /* Changes the text color */
+  }
+  
+  /* Styling for the navbar-text class within the navbar class */
+  .navbar .navbar-text {
+    color: #1da1f2; /* Sets the text color */
+  }
+  
+  /* Styling for the anchor tags within the navbar-text class */
+  .navbar .navbar-text a {
+    color: #1da1f2; /* Sets the text color */
+  }
+  
+  /* Styling for the anchor tags within the navbar-text class on hover and focus */
+  .navbar .navbar-text a:hover, .navbar .navbar-text a:focus {
+    color: #1a91da; /* Changes the text color */
+  }
+  
+  /* Styling for the navbar-nav class within the navbar class */
+  .navbar .navbar-nav {
+    flex-direction: row; /* Sets the direction of the flex items */
+  }
+  
+  /* Styling for the input-group-prepend class */
+  .input-group-prepend {
+    margin-right: -35px; /* Adjusts the right margin */
+    z-index: 100; /* Sets the stack order */
+  }
+  
+  /* Styling for the input-group-append class */
+  .input-group-append {
+    margin-left: -35px; /* Adjusts the left margin */
+    z-index: 100; /* Sets the stack order */
+  }
+  
+  /* Styling for the list-group-item class */
+  .list-group-item {
+    border: none; /* Removes the border */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styling for the active list-group-item class */
+  .list-group-item.active {
+    background-color: #1da1f2; /* Sets the background color */
+    color: #fff; /* Sets the text color */
+  }
+  
+  /* Styling for the fas class within the list-group-item class */
+  .list-group-item .fas {
+    margin-right: 10px; /* Adds margin to the right */
+  }
+  
+  /* Styling for the images within the list-group-item class */
+  .list-group-item img {
+    width: 48px; /* Sets the width */
+    height: 48px; /* Sets the height */
+    object-fit: cover; /* Ensures the aspect ratio of the image is maintained */
+    border-radius: 50%; /* Makes the image circular */
+  }
+  
+  
+  /* Styling for the fas class within the list-group-item class */
+  .list-group-item .fas {
+    color: #000000; /* Sets the text color */
+    margin-right: 10px; /* Adds margin to the right */
+  }
+  
+  /* Styling for the btn-primary class */
+  .btn-primary {
+    background-color: #1da1f2; /* Sets the background color */
+    border-color: #1da1f2; /* Sets the border color */
+  }
+  /* Styling for the btn-primary class on hover, focus, and active */
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #1a91da; /* Changes the background color */
+    border-color: #1a91da; /* Changes the border color */
+  }
+  
+  /* Styling for the btn-primary class with btn-sm class */
+  .btn-primary.btn-sm {
+    padding: .25rem .5rem; /* Adjusts the padding */
+  }
+  
+  /* Styling for the card class */
+  .card {
+    position: relative; /* Sets the position */
+  }
+  
+  /* Styling for the large image within the card section */
+.card-img {
+    width: 100%; /* Sets the width */
+    height: 100%; /* Sets the height */
+    object-fit: cover; /* Ensures the aspect ratio of the image is maintained */
+    display: block; /* Makes the image a block element */
+    margin: auto; /* Centers the image */
+  }
+  
+  
+  /* Styling for the card-img-overlay class */
+  .card-img-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Sets the background color with opacity */
+  }
+  
+  /* Styling for the last child of the card-text class */
+  .card-text:last-child {
+    color: rgba(255, 255, 255, 0.5); /* Sets the text color with opacity */
+  }
+  
+  /* Styling for the images within the tweet section */
+  .tweet img {
+    width: 100px; /* Sets the width */
+    height: 100px; /* Sets the height */
+    object-fit: cover; /* Ensures the aspect ratio of the image is maintained */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+  }
+  .tweet-image {
+    width: 100px !important; /* Sets the width */
+  height: 100px !important; /* Sets the height */
+    object-fit: cover; /* Ensures the aspect ratio of the image is maintained */
+    flex-shrink: 0; /* Prevents the image from shrinking */
+  }
+
+  
+  
+  /* Styling for the tweet-topic class */
+  .tweet-topic {
+    color: gray; /* Sets the text color */
+    font-weight: normal; /* Sets the font weight */
+  }
+  
+  /* Styling for the tweet-title class */
+  .tweet-title {
+    color: black; /* Sets the text color */
+    font-weight: bold; /* Sets the font weight */
+  }
+  
+  /* Styling for the tweet-time class */
+  .tweet-time {
+    color: gray; /* Sets the text color */
+    font-weight: normal; /* Sets the font weight */
+  }
+  
+  /* Styling for the tweet-description class */
+  .tweet-description {
+    color: black; /* Sets the text color */
+    font-weight: bold; /* Sets the font weight */
+    word-wrap: break-word;
+  }
+  
+  /* Styling for the tweet-count class */
+  .tweet-count {
+    color: gray; /* Sets the text color */
+    font-weight: normal; /* Sets the font weight */
+    flex-grow: 1; /* Allows the text to expand to fill available space */
+  }
+  
+  /* Styling for the dot-separator class */
+  .dot-separator {
+    margin: 0px; /* Sets the margin */
+    vertical-align: middle; /* Aligns the element vertically */
+    color: gray; /* Sets the text color */
+  }
+  /* Styling for the btn-primary class */
+  .btn-primary {
+    background-color: #1da1f2; /* Sets the background color */
+    border-color: #1da1f2; /* Sets the border color */
+    width: 100%; /* Sets the width to 100% */
+  }
+  
+  /* Styling for the btn-primary class with btn-sm class */
+  .btn-primary.btn-sm {
+    padding: .25rem .5rem; /* Adjusts the padding */
+    width: auto; /* Sets the width to auto */
+    margin-right: 10px; /* Adds margin to the right */
+  }
+  
+  .button-container {
+    padding-right: 10px;
+  }

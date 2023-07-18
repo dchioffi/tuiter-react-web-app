@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <!-- Title of the webpage -->
+  <title>Tuiter Explore Page</title>
+ 
+  <!-- Link to Bootstrap CSS for styling -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <!-- Link to Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+ 
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container-fluid">
+    <!-- Row for layout -->
+    <div class="row justify-content-center">
+      <!-- Left Column -->
+      <div class="col-6 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-3 mx-auto">
+  <!-- Navigation Links -->
+  <ul class="list-group">
+    <!-- Each list item represents a navigation link -->
+    <li class="list-group-item"><i class="fab fa-twitter"></i><span class="d-none d-xl-inline"></span></li> <!-- Twitter icon -->
+    <li class="list-group-item"><a href="../home.html"><i class="fas fa-home"></i><span class="d-none d-xl-inline"> Home</span></a></li> <!-- Home link -->
+    <li class="list-group-item active"><a href="#"><i class="fas fa-hashtag text-white"></i><span class="d-none d-xl-inline"> Explore</span></a></li> <!-- Explore link (active) -->
+    <li class="list-group-item"><a href="../notifications.html"><i class="fas fa-bell"></i><span class="d-none d-xl-inline"> Notifications</span></a></li> <!-- Notifications link -->
+    <li class="list-group-item"><a href="../messages.html"><i class="fas fa-envelope"></i><span class="d-none d-xl-inline"> Messages</span></a></li> <!-- Messages link -->
+    <li class="list-group-item"><a href="../bookmark/bookmarks-css.html"><i class="fas fa-bookmark"></i><span class="d-none d-xl-inline"> Bookmarks</span></a></li> <!-- Bookmarks link -->
+    <li class="list-group-item"><a href="../lists.html"><i class="fas fa-list-alt"></i><span class="d-none d-xl-inline"> Lists</span></a></li> <!-- Lists link -->
+    <li class="list-group-item"><a href="../profile.html"><i class="fas fa-user"></i><span class="d-none d-xl-inline"> Profile</span></a></li> <!-- Profile link -->
+    <li class="list-group-item"><a href="../more.html"><i class="fas fa-circle"></i><span class="d-none d-xl-inline"> More</span></a></li> <!-- More link -->
+  </ul>
+  
+  <!-- Tuit Button -->
+  <button type="button" class="btn btn-primary rounded-pill mt-3 w-100">Tuit</button> 
+</div>
+      <!-- Center Column -->
+      <div class="col-12 col-sm-7 col-md-9 col-lg-6 col-xl-6 col-xxl-5 mx-auto">
+        <!-- Search Bar -->
+        <div class="input-group mb-3">
+          <!-- Input field for search -->
+          <input type="text" class="form-control rounded-pill pl-5" placeholder="Search Tuiter" aria-label="Search Twitter" style="padding-left: 50px;">
+          <!-- Search icon -->
+          <div class="input-group-prepend" style="position: absolute;">
+            <span class="input-group-text bg-transparent border-0" style="padding-top: 11px;"><i class="fas fa-search"></i></span>
+          </div>
+          <!-- Settings icon -->
+          <div class="input-group-append">
+            <span class="input-group-text bg-transparent border-0"><i class="fas fa-cog fa-2x text-primary"></i></span>
+          </div>
+        </div>
+        <!-- Tabs -->
+        <ul class="nav nav-tabs">
+          <!-- Each list item represents a tab -->
+          <li class="nav-item">
+            <a class="nav-link active" href="for-you.html">For You</a> <!-- For You tab (active) -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trending.html">Trending</a> <!-- Trending tab -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a> <!-- News tab -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sports.html">Sports</a> <!-- Sports tab -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-none d-md-block" href="entertainment.html">Entertainment</a> <!-- Entertainment tab -->
+          </li>
+        </ul>
+        <!-- Image with Text -->
+        <div class="card bg-dark text-white mt-3">
+          <!-- Image -->
+          <img src="../../images/spaceRabbids.webp" class="card-img" alt="...">
+          <!-- Overlay text -->
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h2 class="card-title">Rabbids go to Space!</h2> <!-- Title of the card -->
+          </div>
+        </div>
+        <!-- Tweets -->
+        <ul class="list-group mt-3">
+          <!-- Each list item represents a tweet -->
+          <!-- First Tweet -->
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-8">
+                <span class="tweet-topic">Politics</span> <!-- Topic of the tweet -->
+                <br/>
+                <span class="tweet-title">Rabbids Election</span> <!-- Title of the tweet -->
+                <span class="dot-separator">&#183;</span> <!-- Dot separator -->
+                <span class="tweet-time">2h</span> <!-- Timestamp of the tweet -->
+                <br/>
+                <span class="tweet-description">🐰🗳️ Chaos reigns as the most recent Rabbids elections result in a carrot-loving mayor and endless mayhem.</span> <!-- Description of the tweet -->
+                <br/>
+                <span class="tweet-count">214K Tuits</span> <!-- Number of tweets -->
+              </div>
+              <div class="col-md-4">
+                <img src="../../images/explorerabbids.jpeg" class="rounded float-right tweet-image" alt="...">
+ <!-- Image associated with the tweet -->
+              </div>
+            </div>
+          </li>
+          <!-- Second Tweet -->
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-8">
+                <span class="tweet-topic">Science</span> <!-- Topic of the tweet -->
+                <br/>
+                <span class="tweet-title">Rabbids Science Fair</span> <!-- Title of the tweet -->
+                <span class="dot-separator">&#183;</span> <!-- Dot separator -->
+                <span class="tweet-time">3h</span> <!-- Timestamp of the tweet -->
+                <br/>
+                <span class="tweet-description">🔬✨ Ready for explosive experiments and carrot-powered rockets?</span> <!-- Description of the tweet -->
+                <br/>
+                <span class="tweet-count">76K Tuits</span> <!-- Number of tweets -->
+              </div>
+              <div class="col-md-4">
+                <img src="../../images/science.jpeg" class="rounded float-right tweet-image" alt="...">
+ <!-- Image associated with the tweet -->
+              </div>
+            </div>
+          </li>
+          <!-- Third Tweet -->
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-8">
+                <span class="tweet-topic">Sports</span> <!-- Topic of the tweet -->
+                <br/>
+                <span class="tweet-title">Rabbids Sports Championships</span> <!-- Title of the tweet -->
+                <span class="dot-separator">&#183;</span> <!-- Dot separator -->
+                <span class="tweet-time">9h</span> <!-- Timestamp of the tweet -->
+                <br/>
+                <span class="tweet-description">⚽🥕 Brace yourselves for the craziest sports event in Rabbids history!</span> <!-- Description of the tweet -->
+                <br/>
+                <span class="tweet-count">46K Tuits</span> <!-- Number of tweets -->
+              </div>
+              <div class="col-md-4">
+                <img src="../../images/sportsA.jpeg" class="rounded float-right tweet-image" alt="...">
+ <!-- Image associated with the tweet -->
+              </div>
+            </div>
+          </li>
+          <!-- Fourth Tweet -->
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-8">
+                <span class="tweet-topic">Entertainment</span> <!-- Topic of the tweet -->
+                <br/>
+                <span class="tweet-title"> Rabbids Dance-Off Extravaganza</span> <!-- Title of the tweet -->
+                <span class="dot-separator">&#183;</span> <!-- Dot separator -->
+                <span class="tweet-time">1h</span> <!-- Timestamp of the tweet -->
+                <br/>
+                <span class="tweet-description">💃🕺 Get ready to bust a move like never before! Join the Rabbids Dance-Off Extravaganza!</span> <!-- Description of the tweet -->
+                <br/>
+                <span class="tweet-count">12K Tuits</span> <!-- Number of tweets -->
+              </div>
+              <div class="col-md-4">
+                <img src="../../images/dance.gif" class="rounded float-right tweet-image" alt="...">
+ <!-- Image associated with the tweet -->
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Right Column -->
+       <div class="col-lg-4 col-xl-4 col-xxl-4 d-none d-lg-block">
+  <!-- Who to follow section -->
+  <ul class="list-group">
+    <li class="list-group-item">
+      <strong>Who to follow</strong>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-2"><img src="../../images/carrot.jpeg" class="rounded-circle" alt="..."></div>
+        <div class="col-md-7"><strong>CarrotCo</strong> <i class="fas fa-check-circle text-black"></i><br><small>@CarrotCo_Rabbids</small></div>
+        <div class="col-md-3"><button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button></div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-2"><img src="../../images/race.jpeg" class="rounded-circle" alt="..."></div>
+        <div class="col-md-7"><strong>Rabbid Racerz</strong> <i class="fas fa-check-circle text-black"></i><br><small>@RabbidRacerz</small></div>
+        <div class="col-md-3 button-container"><button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button></div>
+
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-2"><img src="../../images/sports.jpeg" class="rounded-circle" alt="..."></div>
+        <div class="col-md-7"><strong>RabbidSports</strong> <i class="fas fa-check-circle text-black"></i><br><small>@RabbidSports</small></div>
+        <div class="col-md-3 button-container"><button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button></div>
+
+
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-2"><img src="../../images/chef.jpeg" class="rounded-circle" alt="..."></div>
+        <div class="col-md-7"><strong>ChefBunny</strong> <i class="fas fa-check-circle text-black"></i><br><small>@ChefBunny_Rabbids</small></div>
+        <div class="col-md-3 button-container"><button type="button" class="btn btn-primary btn-sm rounded-pill">Follow</button></div>
+
+      </div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </div>
+  <!-- Link to jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Link to Popper.js library (required for Bootstrap) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <!-- Link to Bootstrap JavaScript for interactive elements -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

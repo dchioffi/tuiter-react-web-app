@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 12px;
+}
+
+.wd-tuit {
+    position: relative;
+    padding: 12px;
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-icon {
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.wd-content {
+    border: 1px solid #e1e8ed;
+    padding: 0;
+    margin-top: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wd-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wd-actions {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    color: #6F6F6F;
+    font-size: 0.8em;
+}
+
+.wd-action {
+    margin-right: 50px;
+    color: #657786;
+}
+
+.fa-ellipsis-h {
+    color: #6F6F6F;
+}
+
+.wd-tuit::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: lightgray;
+}
