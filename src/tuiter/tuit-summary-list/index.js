@@ -13,6 +13,6 @@ const TuitSummaryList = () => {
            key={tuit._id} tuit={tuit}/> )
      }
    </ul>
- );
+ )
 };
 export default TuitSummaryList;

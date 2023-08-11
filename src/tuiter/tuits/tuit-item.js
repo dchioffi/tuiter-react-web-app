@@ -1,7 +1,7 @@
 import React from "react";
 import TuitStats from './tuit-stats';
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import { BiX } from 'react-icons/bi';
 
 const TuitItem = (
@@ -25,7 +25,7 @@ const TuitItem = (
     const dispatch = useDispatch(); // Get the dispatch function
 
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id)); // Dispatch the deleteTuit action
+        dispatch(deleteTuitThunk(id));
     }
 
     return (

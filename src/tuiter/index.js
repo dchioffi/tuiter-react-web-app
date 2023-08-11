@@ -4,14 +4,26 @@ import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./home-screen";
 import ExploreScreen from "./explore-screen";
 import BookmarksScreen from "./bookmarks-screen";
-import ProfileScreen from "./profile-screen";
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 import tuitsReducer from "./reducers/tuits-reducer";
+import RegisterScreen from "./user/register-screen";
+import LoginScreen from "./user/login-screen";
+import ProfileScreen from "./user/profile-screen";
+
+import authReducer from "./reducers/auth-reducer";
+import authSlice from "./reducers/auth-reducer";
+
 const store = configureStore({
-   reducer: {who: whoReducer, tuits: tuitsReducer}});
+   reducer: {
+      who: whoReducer,
+      tuits: tuitsReducer,
+      user: authReducer
+   }
+});
+
 
 
 
@@ -30,6 +42,9 @@ function Tuiter() {
                      <Route path="/explore" element={<ExploreScreen />} />
                      <Route path="/bookmarks" element={<BookmarksScreen />} />
                      <Route path="/profile" element={<ProfileScreen />} />
+                     <Route path="/login" element={<LoginScreen />} />
+                     <Route path="/register" element={<RegisterScreen />} />
+                     <Route path="/profile" element={<ProfileScreen />} />Í
                   </Routes>
 
                </div>
