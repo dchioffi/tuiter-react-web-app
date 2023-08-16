@@ -14,7 +14,7 @@ function LoginScreen() {
             navigate("/tuiter/profile");
         } catch (e) {
             alert(e);
-        }
+        }  
     };
     return (
         <div>
